@@ -1,16 +1,68 @@
-.browsehappy {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
+//Color Variables 
+$primary-teal: #5CC099;
+$primary-darkblue: #212C49;
+$light-teal:#DCEFE5;
+$purple:#AC66E2;
+::-webkit-input-placeholder {
+    /* WebKit browsers */
+    
+    color: $primary-darkblue;
 }
 
-.thumbnail {
-  height: 200px;
-
-  img.pull-right {
-    width: 50px;
-  }
+:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    
+    color: $primary-darkblue;
+    opacity: 1;
 }
+
+::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    
+    color: $primary-darkblue;
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    
+    color: #909;
+}
+
+.jumbotron {
+    background-color: $light-teal;
+    color: $primary-darkblue;
+}
+
+section {
+    .fa {
+        font-size: 3em;
+        padding: 1ex;
+    }
+}
+
+section > form > div > input {
+    border-radius: 25px;
+    border: none;
+    padding: 12px;
+    background-color: $light-teal;
+    padding-left: 20px;
+}
+
+section > form > div > .btn {
+    min-width: 180px;
+    border-radius: 25px;
+    background: $primary-teal;
+    text-align: center;
+    padding: 13px 0px 14px 0px;
+    color: #fff;
+    font-size: 15px;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    font-weight: 600;
+    line-height: 1;
+}
+
 // injector
 // endinjector
