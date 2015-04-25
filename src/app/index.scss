@@ -3,6 +3,8 @@ $primary-teal: #5CC099;
 $primary-darkblue: #212C49;
 $light-teal:#DCEFE5;
 $purple:#AC66E2;
+body {}
+
 ::-webkit-input-placeholder {
     /* WebKit browsers */
     
@@ -38,6 +40,10 @@ section {
     .fa {
         font-size: 3em;
         padding: 1ex;
+        color: $purple;
+    }
+    h2 {
+        color: $primary-darkblue;
     }
 }
 
@@ -47,6 +53,9 @@ section > form > div > input {
     padding: 12px;
     background-color: $light-teal;
     padding-left: 20px;
+    &:focus {
+        outline: 0;
+    }
 }
 
 section > form > div > .btn {
@@ -62,6 +71,13 @@ section > form > div > .btn {
     -moz-transition: all 0.3s ease-out;
     font-weight: 600;
     line-height: 1;
+    &:hover {
+        color: $purple;
+    }
+}
+
+section > form > div {
+    padding: 1ex;
 }
 
 // injector
