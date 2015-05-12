@@ -82,6 +82,10 @@ input.button{
         color: white;
     }
 }
+h1{
+    color:purple;
+    background-color: aqua;
+}
 input#mce-FNAME{
 }
 input#mce-LNAME{
@@ -89,6 +93,9 @@ input#mce-LNAME{
 input#mce-MMERGE3{
 }
 input#mce-EMAIL{
+}
+form#join-form{
+    background-color: aqua;
 }
 
 footer{
