@@ -3,7 +3,14 @@ $primary-teal: #5CC099;
 $primary-darkblue: #212C49;
 $light-teal:#DCEFE5;
 $purple:#AC66E2;
-body {}
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
 
 ::-webkit-input-placeholder {
     /* WebKit browsers */
@@ -34,6 +41,11 @@ body {}
 .jumbotron {
     background-color: $light-teal;
     color: $primary-darkblue;
+    img{
+        max-width: 20em;
+        margin: 0 auto;
+        padding-bottom: 3em;
+    }
 }
 
 section {
@@ -42,42 +54,46 @@ section {
         padding: 1ex;
         color: $purple;
     }
-    h2 {
+    h3 {
+        font-size: 5ex;
+        color: $primary-darkblue;
+    }
+    p{
+        font-size:3ex;
         color: $primary-darkblue;
     }
 }
 
-section > form > div > input {
+//Mailchimp
+.form-control{
     border-radius: 25px;
-    border: none;
-    padding: 12px;
+    border:solid 2px $purple;
+    padding: 1.5em;
     background-color: $light-teal;
-    padding-left: 20px;
-    &:focus {
-        outline: 0;
+    margin-bottom: 1ex;
+}
+input.button{
+    border-color: $purple;
+    color:white;
+    background-color: $purple;
+    margin-bottom: 5em;
+    &:hover{
+        background-color: darken( $purple, 10%);
+        color: white;
     }
 }
-
-section > form > div > .btn {
-    min-width: 180px;
-    border-radius: 25px;
-    background: $primary-teal;
-    text-align: center;
-    padding: 13px 0px 14px 0px;
-    color: #fff;
-    font-size: 15px;
-    transition: all 0.3s ease-out;
-    -webkit-transition: all 0.3s ease-out;
-    -moz-transition: all 0.3s ease-out;
-    font-weight: 600;
-    line-height: 1;
-    &:hover {
-        color: $purple;
-    }
+input#mce-FNAME{
+}
+input#mce-LNAME{
+}
+input#mce-MMERGE3{
+}
+input#mce-EMAIL{
 }
 
-section > form > div {
-    padding: 1ex;
+footer{
+    background-color: $primary-teal;
+    padding: 2ex;
 }
 
 // injector
