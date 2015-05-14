@@ -86,6 +86,20 @@ h1{
     color:purple;
     background-color: aqua;
 }
+.social-icons{
+    a{
+        font-size: 2em;
+        border:solid 1px $purple;
+        border-radius: 25px;
+        padding:10px;
+        color: $purple;
+        &:hover{
+            background-color: $purple;
+            color: white;
+            text-decoration: none;
+        }
+    }
+}
 input#mce-FNAME{
 }
 input#mce-LNAME{
@@ -97,7 +111,9 @@ input#mce-EMAIL{
 form#join-form{
     background-color: aqua;
 }
-
+h1{
+    color: aqua;
+}
 footer{
     background-color: $primary-teal;
     padding: 2ex;
