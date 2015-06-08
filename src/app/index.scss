@@ -114,6 +114,27 @@ form#join-form{
 h1{
     color: aqua;
 }
+
+//Twitter Feed
+.tw-feed {
+    width:450px;
+    color:#fff;
+    background: $light-teal;
+    padding:10px;
+    border: solid 5px $light-teal;
+}
+.tw-feed a {
+    color:#fff;
+    text-decoration:none;
+}
+.tw-feed a:hover {
+    color:#ccc;
+    text-decoration:none;
+}
+.twitter-timeline {
+    position:relative;
+}
+
 footer{
     background-color: $primary-teal;
     padding: 2ex;
