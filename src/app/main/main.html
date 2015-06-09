@@ -1,5 +1,24 @@
-<!--  <div ng-include="'components/navbar/navbar.html'"></div>-->
-<div class="jumbotron text-center">
+<nav class="navbar transparent navbar-fixed-top" role="navigation">
+      <nav class="navbar-inner">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle"  data-toggle="collapse" data-target="#example-nav-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"></a></div>
+    <div class="collapse navbar-collapse" id="example-nav-collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#/#form">Stay Connected</a></li>
+              <li><a href="#/#social">#Social</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </nav>
+   <div class="jumbotron text-center">
     <img ng-src="assets/images/startup-orlando-hi-res.png">
     <div class="social-icons">
         <a href="https://twitter.com/startupORL" class="fa fa-twitter"></a>
@@ -13,7 +32,7 @@
 </div>
 
 <div class="row">
-    <section class="container text-center">
+    <section class="form container text-center" id="form">
         <h3>Stay In the Loop</h3>
         <p>Join Startup Orlando Email List!</p>
 
@@ -54,7 +73,7 @@
         </div>
       </section>
 </div>    
-        <section class="twitter container-fluid">
+        <section id="social" class="twitter container-fluid">
                <h2 class="text-center">#SOCIAL</h2>
                 <div id="tw-widget2" class="col-md-12"></div>
         </section>
