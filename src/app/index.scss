@@ -44,7 +44,8 @@ html,body
     img{
         max-width: 20em;
         margin: 0 auto;
-        padding-bottom: 3em;
+        padding-top:5em;
+        padding-bottom: 15em;
     }
 }
 
@@ -116,25 +117,82 @@ h1{
 }
 
 //Twitter Feed
-.tw-feed {
-    width:450px;
-    color:#fff;
-    background: $light-teal;
-    padding:10px;
-    border: solid 5px $light-teal;
-}
-.tw-feed a {
-    color:#fff;
-    text-decoration:none;
-}
-.tw-feed a:hover {
-    color:#ccc;
-    text-decoration:none;
-}
-.twitter-timeline {
-    position:relative;
+
+section.twitter{
+    background-color: $light-teal;
+    padding: 4em;
+    h2{
+        padding-bottom: 3em;
+    }
 }
 
+section > div > ul {
+    list-style: none;
+}
+section > div ul li {
+        display: inline;
+		width: 80%;
+		margin: 0 auto;
+		float: none;
+		@media (min-width: 48em){
+			width: calc(100% / 3);
+			float: left;
+        }
+}
+section > div > ul > li > div > a{
+    color: $primary-darkblue;
+}
+.tweet{
+    font-size: 2ex;
+    margin:0;
+    padding:10px 20px;
+    color: $primary-teal;
+    a{
+        font-weight: bold;
+        text-decoration: none;
+        color: $purple;
+    }
+    	a[data-scribe="element:url"]{
+			text-decoration: underline
+        }
+		a[data-scribe="element:hashtag"]{
+			color: $primary-darkblue;
+        }
+		img[aria-label^="Emoji"]{
+			max-height: 14px
+        }
+}
+.user{
+    padding: 20px 20px 16px;
+    position: relative;
+    a{
+        span{
+            display: block;
+            text-align: left;
+            color: white;
+            font-weight: bold;
+        }
+        img[data-scribe="element:avatar"]{
+				display: none;
+        }
+			// Target name
+        span[data-scribe="element:name"]{
+				font-size: 20px;
+            }
+					
+			// Target username (@screen-name)
+        span[data-scribe="element:screen_name"]{
+				font-size: 14px;
+				color: black;
+         }
+    }
+}
+.timePosted{
+    margin:0;
+    padding:0 20px;
+    font-size: 14px;
+    text-align: left;
+}
 footer{
     background-color: $primary-teal;
     padding: 2ex;
